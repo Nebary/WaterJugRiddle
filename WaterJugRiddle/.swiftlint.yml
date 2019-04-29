@@ -1,0 +1,66 @@
+excluded:
+  - Carthage
+  - Pods
+  - Templates
+
+identifier_name:
+  min_length:
+    warning: 0
+    error: 0
+
+large_tuple: # questionable, we'll see how it goes
+  warning: 4
+  error: 5
+
+# Test performance on a bigger project, move to CI if needed
+opt_in_rules:
+  - closure_end_indentation 
+  - closure_spacing
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - literal_expression_end_indentation
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+  - untyped_error_in_catch
+  - unneeded_parentheses_in_closure_argument
+  - unavailable_function
+  - trailing_closure
+  - toggle_bool
+  - switch_case_on_newline
+  - sorted_first_last
+  - single_test_class
+  - required_enum_case
+  - redundant_type_annotation
+  - redundant_nil_coalescing
+  - quick_discouraged_pending_test
+  - quick_discouraged_focused_test
+  - quick_discouraged_call
+  - prohibited_super_call
+  - pattern_matching_keywords
+  - override_in_extension
+  - overridden_super_call
+  - operator_usage_whitespace
+  - object_literal
+  - number_separator
+  - nimble_operator
+  - multiline_parameters
+  - multiline_function_chains
+  - multiline_arguments
+  - modifier_order
+  - missing_docs
+  - lower_acl_than_parent
+  - let_var_whitespace
+  - joined_default_parameter
+  - implicit_return
+  - identical_operands
+  - function_default_parameter_at_end
+  - file_name
+  - file_length
+  - empty_string
+  - convenience_type
+  - collection_alignment
+  - closure_body_length
+  - attributes

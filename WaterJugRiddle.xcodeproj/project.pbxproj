@@ -15,6 +15,7 @@
 		A3B8CC552277924A007E850E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC542277924A007E850E /* Assets.xcassets */; };
 		A3B8CC582277924A007E850E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC562277924A007E850E /* LaunchScreen.storyboard */; };
 		A3B8CC632277924A007E850E /* WaterJugRiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */; };
+		A3B8CC6F22779515007E850E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC6E22779515007E850E /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A3B8CC5E2277924A007E850E /* WaterJugRiddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterJugRiddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterJugRiddleTests.swift; sourceTree = "<group>"; };
 		A3B8CC642277924A007E850E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B8CC6E22779515007E850E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = ../../Saviynt/.swiftlint.yml; sourceTree = "<group>"; };
 		C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddle.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddle/Pods-WaterJugRiddle.release.xcconfig"; sourceTree = "<group>"; };
 		C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterJugRiddleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				A3B8CC5122779249007E850E /* Main.storyboard */,
 				A3B8CC542277924A007E850E /* Assets.xcassets */,
 				A3B8CC562277924A007E850E /* LaunchScreen.storyboard */,
+				A3B8CC6E22779515007E850E /* .swiftlint.yml */,
 				A3B8CC592277924A007E850E /* Info.plist */,
 			);
 			path = WaterJugRiddle;
@@ -125,7 +128,6 @@
 				737068FD9E61D44BD5E913CD /* Pods-WaterJugRiddleTests.debug.xcconfig */,
 				9CFB1FCF6DE9CE3B29F1F9AC /* Pods-WaterJugRiddleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +142,7 @@
 				A3B8CC4622779249007E850E /* Sources */,
 				A3B8CC4722779249007E850E /* Frameworks */,
 				A3B8CC4822779249007E850E /* Resources */,
+				A3B8CC7022779548007E850E /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B8CC6F22779515007E850E /* .swiftlint.yml in Resources */,
 				A3B8CC582277924A007E850E /* LaunchScreen.storyboard in Resources */,
 				A3B8CC552277924A007E850E /* Assets.xcassets in Resources */,
 				A3B8CC5322779249007E850E /* Main.storyboard in Resources */,
@@ -249,6 +253,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A3B8CC7022779548007E850E /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		D28EFADB39F244AB658CB9A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
