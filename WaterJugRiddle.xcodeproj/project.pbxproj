@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4463F8BF720F6AE327252903 /* Pods_WaterJugRiddleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */; };
+		A08E5EC4F68F1BA89C0F8815 /* Pods_WaterJugRiddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387DE06B74AACC229F2A4F85 /* Pods_WaterJugRiddle.framework */; };
 		A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4D22779249007E850E /* AppDelegate.swift */; };
 		A3B8CC5022779249007E850E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4F22779249007E850E /* ViewController.swift */; };
 		A3B8CC5322779249007E850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC5122779249007E850E /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		387DE06B74AACC229F2A4F85 /* Pods_WaterJugRiddle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterJugRiddle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A305B361D416F6642A6D1E3 /* Pods-WaterJugRiddle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddle.debug.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddle/Pods-WaterJugRiddle.debug.xcconfig"; sourceTree = "<group>"; };
+		737068FD9E61D44BD5E913CD /* Pods-WaterJugRiddleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddleTests.debug.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddleTests/Pods-WaterJugRiddleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CFB1FCF6DE9CE3B29F1F9AC /* Pods-WaterJugRiddleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddleTests.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddleTests/Pods-WaterJugRiddleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3B8CC4A22779249007E850E /* WaterJugRiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJugRiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC4D22779249007E850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B8CC4F22779249007E850E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		A3B8CC5E2277924A007E850E /* WaterJugRiddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterJugRiddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterJugRiddleTests.swift; sourceTree = "<group>"; };
 		A3B8CC642277924A007E850E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddle.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddle/Pods-WaterJugRiddle.release.xcconfig"; sourceTree = "<group>"; };
+		C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterJugRiddleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08E5EC4F68F1BA89C0F8815 /* Pods_WaterJugRiddle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4463F8BF720F6AE327252903 /* Pods_WaterJugRiddleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0627A2D7C25F880F737946AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				387DE06B74AACC229F2A4F85 /* Pods_WaterJugRiddle.framework */,
+				C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3B8CC4122779249007E850E = {
 			isa = PBXGroup;
 			children = (
 				A3B8CC4C22779249007E850E /* WaterJugRiddle */,
 				A3B8CC612277924A007E850E /* WaterJugRiddleTests */,
 				A3B8CC4B22779249007E850E /* Products */,
+				EA53DB309C3D5049883CA1F0 /* Pods */,
+				0627A2D7C25F880F737946AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,18 @@
 			path = WaterJugRiddleTests;
 			sourceTree = "<group>";
 		};
+		EA53DB309C3D5049883CA1F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A305B361D416F6642A6D1E3 /* Pods-WaterJugRiddle.debug.xcconfig */,
+				C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */,
+				737068FD9E61D44BD5E913CD /* Pods-WaterJugRiddleTests.debug.xcconfig */,
+				9CFB1FCF6DE9CE3B29F1F9AC /* Pods-WaterJugRiddleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3B8CC672277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddle" */;
 			buildPhases = (
+				7A49F73BC8DA317460B5FE55 /* [CP] Check Pods Manifest.lock */,
 				A3B8CC4622779249007E850E /* Sources */,
 				A3B8CC4722779249007E850E /* Frameworks */,
 				A3B8CC4822779249007E850E /* Resources */,
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3B8CC6A2277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddleTests" */;
 			buildPhases = (
+				D28EFADB39F244AB658CB9A7 /* [CP] Check Pods Manifest.lock */,
 				A3B8CC5A2277924A007E850E /* Sources */,
 				A3B8CC5B2277924A007E850E /* Frameworks */,
 				A3B8CC5C2277924A007E850E /* Resources */,
@@ -191,6 +226,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A49F73BC8DA317460B5FE55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterJugRiddle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28EFADB39F244AB658CB9A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterJugRiddleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3B8CC4622779249007E850E /* Sources */ = {
@@ -358,6 +440,7 @@
 		};
 		A3B8CC682277924A007E850E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A305B361D416F6642A6D1E3 /* Pods-WaterJugRiddle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +459,7 @@
 		};
 		A3B8CC692277924A007E850E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +478,7 @@
 		};
 		A3B8CC6B2277924A007E850E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737068FD9E61D44BD5E913CD /* Pods-WaterJugRiddleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +500,7 @@
 		};
 		A3B8CC6C2277924A007E850E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFB1FCF6DE9CE3B29F1F9AC /* Pods-WaterJugRiddleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
