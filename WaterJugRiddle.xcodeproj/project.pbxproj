@@ -16,6 +16,10 @@
 		A3B8CC582277924A007E850E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC562277924A007E850E /* LaunchScreen.storyboard */; };
 		A3B8CC632277924A007E850E /* WaterJugRiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */; };
 		A3B8CC6F22779515007E850E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC6E22779515007E850E /* .swiftlint.yml */; };
+		A3B8CC73227798F0007E850E /* Jug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC72227798EF007E850E /* Jug.swift */; };
+		A3B8CC7522779A05007E850E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7422779A05007E850E /* State.swift */; };
+		A3B8CC7722779AD6007E850E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7622779AD6007E850E /* Step.swift */; };
+		A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7922779D28007E850E /* PathFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterJugRiddleTests.swift; sourceTree = "<group>"; };
 		A3B8CC642277924A007E850E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B8CC6E22779515007E850E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = ../../Saviynt/.swiftlint.yml; sourceTree = "<group>"; };
+		A3B8CC72227798EF007E850E /* Jug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jug.swift; sourceTree = "<group>"; };
+		A3B8CC7422779A05007E850E /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A3B8CC7622779AD6007E850E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		A3B8CC7922779D28007E850E /* PathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
 		C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddle.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddle/Pods-WaterJugRiddle.release.xcconfig"; sourceTree = "<group>"; };
 		C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterJugRiddleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +108,8 @@
 		A3B8CC4C22779249007E850E /* WaterJugRiddle */ = {
 			isa = PBXGroup;
 			children = (
+				A3B8CC7822779D08007E850E /* Protocols */,
+				A3B8CC712277963B007E850E /* Models */,
 				A3B8CC4D22779249007E850E /* AppDelegate.swift */,
 				A3B8CC4F22779249007E850E /* ViewController.swift */,
 				A3B8CC5122779249007E850E /* Main.storyboard */,
@@ -118,6 +128,24 @@
 				A3B8CC642277924A007E850E /* Info.plist */,
 			);
 			path = WaterJugRiddleTests;
+			sourceTree = "<group>";
+		};
+		A3B8CC712277963B007E850E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC72227798EF007E850E /* Jug.swift */,
+				A3B8CC7422779A05007E850E /* State.swift */,
+				A3B8CC7622779AD6007E850E /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3B8CC7822779D08007E850E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC7922779D28007E850E /* PathFinder.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		EA53DB309C3D5049883CA1F0 /* Pods */ = {
@@ -302,7 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B8CC5022779249007E850E /* ViewController.swift in Sources */,
+				A3B8CC73227798F0007E850E /* Jug.swift in Sources */,
+				A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */,
+				A3B8CC7722779AD6007E850E /* Step.swift in Sources */,
 				A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */,
+				A3B8CC7522779A05007E850E /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

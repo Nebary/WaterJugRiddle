@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  WaterJugRiddle
-//
-//  Created by Nabi Makhmudov on 4/29/19.
-//  Copyright © 2019 Distillery. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
