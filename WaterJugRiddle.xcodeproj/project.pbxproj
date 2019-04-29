@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4D22779249007E850E /* AppDelegate.swift */; };
+		A3B8CC5022779249007E850E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4F22779249007E850E /* ViewController.swift */; };
+		A3B8CC5322779249007E850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC5122779249007E850E /* Main.storyboard */; };
+		A3B8CC552277924A007E850E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC542277924A007E850E /* Assets.xcassets */; };
+		A3B8CC582277924A007E850E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC562277924A007E850E /* LaunchScreen.storyboard */; };
+		A3B8CC632277924A007E850E /* WaterJugRiddleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3B8CC5F2277924A007E850E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B8CC4222779249007E850E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B8CC4922779249007E850E;
+			remoteInfo = WaterJugRiddle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3B8CC4A22779249007E850E /* WaterJugRiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJugRiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B8CC4D22779249007E850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3B8CC4F22779249007E850E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3B8CC5222779249007E850E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3B8CC542277924A007E850E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3B8CC572277924A007E850E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3B8CC592277924A007E850E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B8CC5E2277924A007E850E /* WaterJugRiddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterJugRiddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterJugRiddleTests.swift; sourceTree = "<group>"; };
+		A3B8CC642277924A007E850E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3B8CC4722779249007E850E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B8CC5B2277924A007E850E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3B8CC4122779249007E850E = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC4C22779249007E850E /* WaterJugRiddle */,
+				A3B8CC612277924A007E850E /* WaterJugRiddleTests */,
+				A3B8CC4B22779249007E850E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3B8CC4B22779249007E850E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC4A22779249007E850E /* WaterJugRiddle.app */,
+				A3B8CC5E2277924A007E850E /* WaterJugRiddleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B8CC4C22779249007E850E /* WaterJugRiddle */ = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC4D22779249007E850E /* AppDelegate.swift */,
+				A3B8CC4F22779249007E850E /* ViewController.swift */,
+				A3B8CC5122779249007E850E /* Main.storyboard */,
+				A3B8CC542277924A007E850E /* Assets.xcassets */,
+				A3B8CC562277924A007E850E /* LaunchScreen.storyboard */,
+				A3B8CC592277924A007E850E /* Info.plist */,
+			);
+			path = WaterJugRiddle;
+			sourceTree = "<group>";
+		};
+		A3B8CC612277924A007E850E /* WaterJugRiddleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B8CC622277924A007E850E /* WaterJugRiddleTests.swift */,
+				A3B8CC642277924A007E850E /* Info.plist */,
+			);
+			path = WaterJugRiddleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3B8CC4922779249007E850E /* WaterJugRiddle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B8CC672277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddle" */;
+			buildPhases = (
+				A3B8CC4622779249007E850E /* Sources */,
+				A3B8CC4722779249007E850E /* Frameworks */,
+				A3B8CC4822779249007E850E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterJugRiddle;
+			productName = WaterJugRiddle;
+			productReference = A3B8CC4A22779249007E850E /* WaterJugRiddle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3B8CC5D2277924A007E850E /* WaterJugRiddleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B8CC6A2277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddleTests" */;
+			buildPhases = (
+				A3B8CC5A2277924A007E850E /* Sources */,
+				A3B8CC5B2277924A007E850E /* Frameworks */,
+				A3B8CC5C2277924A007E850E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B8CC602277924A007E850E /* PBXTargetDependency */,
+			);
+			name = WaterJugRiddleTests;
+			productName = WaterJugRiddleTests;
+			productReference = A3B8CC5E2277924A007E850E /* WaterJugRiddleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3B8CC4222779249007E850E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Distillery;
+				TargetAttributes = {
+					A3B8CC4922779249007E850E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A3B8CC5D2277924A007E850E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A3B8CC4922779249007E850E;
+					};
+				};
+			};
+			buildConfigurationList = A3B8CC4522779249007E850E /* Build configuration list for PBXProject "WaterJugRiddle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3B8CC4122779249007E850E;
+			productRefGroup = A3B8CC4B22779249007E850E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3B8CC4922779249007E850E /* WaterJugRiddle */,
+				A3B8CC5D2277924A007E850E /* WaterJugRiddleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3B8CC4822779249007E850E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B8CC582277924A007E850E /* LaunchScreen.storyboard in Resources */,
+				A3B8CC552277924A007E850E /* Assets.xcassets in Resources */,
+				A3B8CC5322779249007E850E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B8CC5C2277924A007E850E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3B8CC4622779249007E850E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B8CC5022779249007E850E /* ViewController.swift in Sources */,
+				A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B8CC5A2277924A007E850E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B8CC632277924A007E850E /* WaterJugRiddleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3B8CC602277924A007E850E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B8CC4922779249007E850E /* WaterJugRiddle */;
+			targetProxy = A3B8CC5F2277924A007E850E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3B8CC5122779249007E850E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B8CC5222779249007E850E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3B8CC562277924A007E850E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B8CC572277924A007E850E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3B8CC652277924A007E850E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3B8CC662277924A007E850E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3B8CC682277924A007E850E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76P2NC8ZJP;
+				INFOPLIST_FILE = WaterJugRiddle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.distillery.WaterJugRiddle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3B8CC692277924A007E850E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76P2NC8ZJP;
+				INFOPLIST_FILE = WaterJugRiddle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.distillery.WaterJugRiddle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3B8CC6B2277924A007E850E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76P2NC8ZJP;
+				INFOPLIST_FILE = WaterJugRiddleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.distillery.WaterJugRiddleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterJugRiddle.app/WaterJugRiddle";
+			};
+			name = Debug;
+		};
+		A3B8CC6C2277924A007E850E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76P2NC8ZJP;
+				INFOPLIST_FILE = WaterJugRiddleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.distillery.WaterJugRiddleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterJugRiddle.app/WaterJugRiddle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3B8CC4522779249007E850E /* Build configuration list for PBXProject "WaterJugRiddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B8CC652277924A007E850E /* Debug */,
+				A3B8CC662277924A007E850E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B8CC672277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B8CC682277924A007E850E /* Debug */,
+				A3B8CC692277924A007E850E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B8CC6A2277924A007E850E /* Build configuration list for PBXNativeTarget "WaterJugRiddleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B8CC6B2277924A007E850E /* Debug */,
+				A3B8CC6C2277924A007E850E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3B8CC4222779249007E850E /* Project object */;
+}
