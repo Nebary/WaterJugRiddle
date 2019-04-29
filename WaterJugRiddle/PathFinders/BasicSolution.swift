@@ -38,8 +38,8 @@ class BasicSolution {
             return
         }
 
-        //Actual finding algorithm.
         states.insert(currentState)
+        //Actual finding algorithm.
         if xJug.current == 0 {
             //If jug is empty, fill it from the lake.
             path.append(.fillX)
