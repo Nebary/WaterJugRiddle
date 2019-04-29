@@ -1,15 +1,14 @@
 /// Jug is the basic model to represent the water jug.
-/// By conforming to ExpressibleByIntegerLiteral we can initialize it using simple Int values: `let jug: Jug = 1`
-struct Jug: ExpressibleByIntegerLiteral {
+struct Jug {
 
     let max: Int
     var current: Int
 
-    /// Add ExpressibleByIntegerLiteral conformance.
+    /// Convenient initializer for the jug object.
     ///
-    /// - Parameter value: Int value representing the size of the jug.
-    init(integerLiteral value: IntegerLiteralType) {
-        max = value
+    /// - Parameter size: Int value representing the size of the jug.
+    init(size: Int) {
+        max = size
         current = 0
     }
 
