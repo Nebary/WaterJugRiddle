@@ -1,6 +1,6 @@
-/// Implementation of PathFinder protocol which goes in left (reverted) direction.
+/// Implementation of SolutionStrategy protocol which goes in left (reverted) direction.
 /// Sometime most efficient way of resolving riddle is to go to opposite (reverted) direction.
-struct LeftPathFinder: PathFinder {
+struct LeftStrategy: SolutionStrategy {
 
     func findPath(_ xAmount: Int, _ yAmount: Int, _ zAmount: Int, completion: @escaping ([PathTuple]) -> Void) {
         let xJug = Jug(size: xAmount)

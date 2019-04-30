@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 class SolutionViewModel {
 
@@ -8,13 +9,13 @@ class SolutionViewModel {
     init(xSize: Double,
          ySize: Double,
          zSize: Double,
-         pathFinders: [PathFinder],
+         solutionStrategies: [SolutionStrategy],
          completion: @escaping () -> Void) {
 
         cells = []
         paths = []
         let group = DispatchGroup()
-        pathFinders.forEach {
+        solutionStrategies.forEach {
             group.enter()
             $0.findPath(Int(xSize), Int(ySize), Int(zSize)) { [weak self] path in
                 guard let self = self else { return }
@@ -40,9 +41,20 @@ class SolutionViewModel {
 }
 
 struct StepCellModel {
+
     let text: String
     let xAmount: Int
     let yAmount: Int
     let xSize: Int
     let ySize: Int
+
+    var xMultiplier: CGFloat {
+        guard xSize != 0 else { return 0 }
+        return CGFloat(xAmount) / CGFloat(xSize)
+    }
+    var yMultiplier: CGFloat {
+        guard ySize != 0 else { return 0 }
+        return CGFloat(yAmount) / CGFloat(ySize)
+    }
+
 }

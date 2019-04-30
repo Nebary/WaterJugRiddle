@@ -22,7 +22,7 @@ class SolutionViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var emptyView: UIView!
 
-    var pathFinders = [PathFinder]()
+    var solutionStrategies = [SolutionStrategy]()
     var viewModel: SolutionViewModel?
 
     override func viewDidLoad() {
@@ -66,7 +66,7 @@ class SolutionViewController: UIViewController {
         viewModel = SolutionViewModel(xSize: xStepper.value,
                                       ySize: yStepper.value,
                                       zSize: zStepper.value,
-                                      pathFinders: pathFinders) { [weak self] in
+                                      solutionStrategies: solutionStrategies) { [weak self] in
             HUD.hide()
             guard let self = self else { return }
             self.reloadData()

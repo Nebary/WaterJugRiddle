@@ -16,11 +16,8 @@ class StepCell: UITableViewCell {
         stepLabel.text = model.text
         xLabel.text = String(model.xAmount)
         yLabel.text = String(model.yAmount)
-
-        var percentage = CGFloat(model.xAmount) / CGFloat(model.xSize)
-        xHeight.constant = xView.bounds.height * percentage
-        percentage = CGFloat(model.yAmount) / CGFloat(model.ySize)
-        yHeight.constant = yView.bounds.height * percentage
+        xHeight.constant = xView.bounds.height * model.xMultiplier
+        yHeight.constant = yView.bounds.height * model.yMultiplier
     }
 
 }

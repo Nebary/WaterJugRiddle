@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //Inject path finder dependencies
     func injectDependencies() {
         guard let viewController = window?.rootViewController as? SolutionViewController else { return }
-        viewController.pathFinders = [RightPathFinder(), LeftPathFinder()]
+        viewController.solutionStrategies = [RightStrategy(), LeftStrategy()]
     }
 
 }

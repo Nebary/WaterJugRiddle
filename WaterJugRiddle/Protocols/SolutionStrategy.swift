@@ -1,5 +1,5 @@
-/// PathFinder protocol should be implemented by any class/struct which proveds the way to solve the riddle.
-protocol PathFinder {
+/// SolutionStrategy protocol should be implemented by any class/struct which proveds the way to solve the riddle.
+protocol SolutionStrategy {
 
     /// Tries to resolve the riddle and provide steps as the completion result.
     ///

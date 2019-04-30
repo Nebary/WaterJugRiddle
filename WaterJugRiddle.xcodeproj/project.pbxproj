@@ -29,10 +29,10 @@
 		A3B8CC73227798F0007E850E /* Jug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC72227798EF007E850E /* Jug.swift */; };
 		A3B8CC7522779A05007E850E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7422779A05007E850E /* State.swift */; };
 		A3B8CC7722779AD6007E850E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7622779AD6007E850E /* Step.swift */; };
-		A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7922779D28007E850E /* PathFinder.swift */; };
+		A3B8CC7A22779D28007E850E /* SolutionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7922779D28007E850E /* SolutionStrategy.swift */; };
 		A3B8CC7D22779EE4007E850E /* BasicSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7C22779EE4007E850E /* BasicSolution.swift */; };
-		A3B8CC7F2277A452007E850E /* RightPathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7E2277A452007E850E /* RightPathFinder.swift */; };
-		A3B8CC812277A8D3007E850E /* LeftPathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC802277A8D3007E850E /* LeftPathFinder.swift */; };
+		A3B8CC7F2277A452007E850E /* RightStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC7E2277A452007E850E /* RightStrategy.swift */; };
+		A3B8CC812277A8D3007E850E /* LeftStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC802277A8D3007E850E /* LeftStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +74,10 @@
 		A3B8CC72227798EF007E850E /* Jug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jug.swift; sourceTree = "<group>"; };
 		A3B8CC7422779A05007E850E /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A3B8CC7622779AD6007E850E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
-		A3B8CC7922779D28007E850E /* PathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
+		A3B8CC7922779D28007E850E /* SolutionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionStrategy.swift; sourceTree = "<group>"; };
 		A3B8CC7C22779EE4007E850E /* BasicSolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSolution.swift; sourceTree = "<group>"; };
-		A3B8CC7E2277A452007E850E /* RightPathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightPathFinder.swift; sourceTree = "<group>"; };
-		A3B8CC802277A8D3007E850E /* LeftPathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPathFinder.swift; sourceTree = "<group>"; };
+		A3B8CC7E2277A452007E850E /* RightStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightStrategy.swift; sourceTree = "<group>"; };
+		A3B8CC802277A8D3007E850E /* LeftStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftStrategy.swift; sourceTree = "<group>"; };
 		C1BAA8E65CB440E776507197 /* Pods-WaterJugRiddle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddle.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddle/Pods-WaterJugRiddle.release.xcconfig"; sourceTree = "<group>"; };
 		C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterJugRiddleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,7 +220,7 @@
 		A3B8CC7822779D08007E850E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A3B8CC7922779D28007E850E /* PathFinder.swift */,
+				A3B8CC7922779D28007E850E /* SolutionStrategy.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				A3B8CC7C22779EE4007E850E /* BasicSolution.swift */,
-				A3B8CC7E2277A452007E850E /* RightPathFinder.swift */,
-				A3B8CC802277A8D3007E850E /* LeftPathFinder.swift */,
+				A3B8CC7E2277A452007E850E /* RightStrategy.swift */,
+				A3B8CC802277A8D3007E850E /* LeftStrategy.swift */,
 			);
 			path = PathFinders;
 			sourceTree = "<group>";
@@ -419,8 +419,8 @@
 				A37D17CC22782CF90018ED4D /* String.swift in Sources */,
 				A3B8CC5022779249007E850E /* SolutionViewController.swift in Sources */,
 				A3B8CC73227798F0007E850E /* Jug.swift in Sources */,
-				A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */,
-				A3B8CC7F2277A452007E850E /* RightPathFinder.swift in Sources */,
+				A3B8CC7A22779D28007E850E /* SolutionStrategy.swift in Sources */,
+				A3B8CC7F2277A452007E850E /* RightStrategy.swift in Sources */,
 				A3B8CC7722779AD6007E850E /* Step.swift in Sources */,
 				A37D17C6227823660018ED4D /* HUD.swift in Sources */,
 				A37D17C8227823980018ED4D /* UIView+Constraints.swift in Sources */,
@@ -433,7 +433,7 @@
 				A37D17BE227819EA0018ED4D /* CGColor.swift in Sources */,
 				A37D17C422781A6F0018ED4D /* UserDefaults.swift in Sources */,
 				A37D17C022781A2D0018ED4D /* UITableView.swift in Sources */,
-				A3B8CC812277A8D3007E850E /* LeftPathFinder.swift in Sources */,
+				A3B8CC812277A8D3007E850E /* LeftStrategy.swift in Sources */,
 				A3B8CC7522779A05007E850E /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
