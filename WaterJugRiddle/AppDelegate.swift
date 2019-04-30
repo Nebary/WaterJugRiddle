@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //Inject path finder dependencies
     func injectDependencies() {
-        guard let mainController = window?.rootViewController as? ViewController else { return }
-        mainController.pathFinders = [RightPathFinder(), LeftPathFinder()]
+        guard let viewController = window?.rootViewController as? SolutionViewController else { return }
+        viewController.pathFinders = [RightPathFinder(), LeftPathFinder()]
     }
 
 }

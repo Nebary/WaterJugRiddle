@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SolutionViewController: UIViewController {
 
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
     //PathFinders dependecy.
     var pathFinders = [PathFinder]()
+    var viewModel: SolutionViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +38,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func findSolutionTapped(_ sender: Any) {
-        let xAmount = Int(xStepper.value)
-        let yAmount = Int(yStepper.value)
-        let zAmount = Int(zStepper.value)
-        pathFinders.forEach {
-            $0.findPath(xAmount, yAmount, zAmount) { path in
-                print(path.map { ($0.0.rawValue, "X=\($0.1.xAmount)", "Y=\($0.1.yAmount)") })
-            }
+        viewModel = SolutionViewModel(xSize: xStepper.value,
+                                      ySize: yStepper.value,
+                                      zSize: zStepper.value,
+                                      pathFinders: pathFinders) { [weak self] in
+            guard let self = self else { return }
+            self.reloadData()
         }
+    }
+
+    func reloadData() {
+        guard let model = viewModel else { return }
+        print(model.cells)
     }
 
 }

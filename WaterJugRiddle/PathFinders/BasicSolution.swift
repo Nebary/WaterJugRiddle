@@ -5,7 +5,7 @@ class BasicSolution {
     var xJug: Jug
     var yJug: Jug
     var zAmount: Int
-    var path: [(Step, State)]
+    var path: [PathTuple]
     var states: Set<State>
 
     var currentState: State { return State(xJug, yJug) }

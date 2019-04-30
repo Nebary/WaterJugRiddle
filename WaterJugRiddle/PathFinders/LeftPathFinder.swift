@@ -2,7 +2,7 @@
 /// Sometime most efficient way of resolving riddle is to go to opposite (reverted) direction.
 struct LeftPathFinder: PathFinder {
 
-    func findPath(_ xAmount: Int, _ yAmount: Int, _ zAmount: Int, completion: @escaping ([(Step, State)]) -> Void) {
+    func findPath(_ xAmount: Int, _ yAmount: Int, _ zAmount: Int, completion: @escaping ([PathTuple]) -> Void) {
         let xJug = Jug(size: xAmount)
         let yJug = Jug(size: yAmount)
 
