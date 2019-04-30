@@ -20,7 +20,6 @@ class SolutionViewModel {
                 guard let self = self else { return }
                 group.leave()
                 self.paths.append(path)
-                print(path.map { ($0.0.rawValue, "X=\($0.1.xAmount)", "Y=\($0.1.yAmount)") })
             }
         }
         group.notify(queue: DispatchQueue.main) { [weak self] in

@@ -17,6 +17,8 @@
 		A37D17C422781A6F0018ED4D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C322781A6F0018ED4D /* UserDefaults.swift */; };
 		A37D17C6227823660018ED4D /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C5227823660018ED4D /* HUD.swift */; };
 		A37D17C8227823980018ED4D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C7227823980018ED4D /* UIView+Constraints.swift */; };
+		A37D17CA22782C5E0018ED4D /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C922782C5E0018ED4D /* UIAlertController.swift */; };
+		A37D17CC22782CF90018ED4D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17CB22782CF90018ED4D /* String.swift */; };
 		A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4D22779249007E850E /* AppDelegate.swift */; };
 		A3B8CC5022779249007E850E /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4F22779249007E850E /* SolutionViewController.swift */; };
 		A3B8CC5322779249007E850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC5122779249007E850E /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		A37D17C322781A6F0018ED4D /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A37D17C5227823660018ED4D /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		A37D17C7227823980018ED4D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		A37D17C922782C5E0018ED4D /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		A37D17CB22782CF90018ED4D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A3B8CC4A22779249007E850E /* WaterJugRiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJugRiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC4D22779249007E850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B8CC4F22779249007E850E /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				A37D17BD227819EA0018ED4D /* CGColor.swift */,
+				A37D17CB22782CF90018ED4D /* String.swift */,
+				A37D17C922782C5E0018ED4D /* UIAlertController.swift */,
 				A37D17BF22781A2D0018ED4D /* UITableView.swift */,
 				A37D17C122781A450018ED4D /* UIView+Layer.swift */,
 				A37D17C7227823980018ED4D /* UIView+Constraints.swift */,
@@ -410,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37D17CC22782CF90018ED4D /* String.swift in Sources */,
 				A3B8CC5022779249007E850E /* SolutionViewController.swift in Sources */,
 				A3B8CC73227798F0007E850E /* Jug.swift in Sources */,
 				A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */,
@@ -420,6 +427,7 @@
 				A37D17B62277E7F20018ED4D /* SolutionViewModel.swift in Sources */,
 				A37D17C222781A450018ED4D /* UIView+Layer.swift in Sources */,
 				A37D17BA227810860018ED4D /* StepCell.swift in Sources */,
+				A37D17CA22782C5E0018ED4D /* UIAlertController.swift in Sources */,
 				A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */,
 				A3B8CC7D22779EE4007E850E /* BasicSolution.swift in Sources */,
 				A37D17BE227819EA0018ED4D /* CGColor.swift in Sources */,

@@ -10,6 +10,9 @@ import UIKit
 
 class SolutionViewController: UIViewController {
 
+    @IBOutlet weak var xButton: UIButton!
+    @IBOutlet weak var yButton: UIButton!
+    @IBOutlet weak var zButton: UIButton!
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
     @IBOutlet weak var zLabel: UILabel!
@@ -34,6 +37,25 @@ class SolutionViewController: UIViewController {
         xLabel.text = String(Int(xStepper.value))
         yLabel.text = String(Int(yStepper.value))
         zLabel.text = String(Int(zStepper.value))
+    }
+
+    @IBAction func jugButtonTapped(_ sender: Any) {
+        guard let button = sender as? UIButton else { return }
+        let jugLetter = button == xButton ? "X" : (button == yButton ? "Y" : "Z")
+        let stepper = button == xButton ? xStepper : (button == yButton ? yStepper : zStepper)
+        let dialog = UIAlertController(
+            editor: "\(jugLetter) Jug",
+            message: "Set \(jugLetter) jug size",
+            text: String(Int(stepper?.value ?? 0)),
+            placeholder: "Jug size",
+            saveTitle: "Set Size",
+            saveHandler: { _, newValue in
+                guard let newNumber = Double(newValue) else { return }
+                stepper?.value = newNumber
+                self.stepperValueChanged(self)
+            },
+            cancelHandler: { _ in })
+        present(dialog, animated: true, completion: nil)
     }
 
     @IBAction func findSolutionTapped(_ sender: Any) {
