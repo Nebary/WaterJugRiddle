@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         let zAmount = Int(zStepper.value)
         pathFinders.forEach {
             $0.findPath(xAmount, yAmount, zAmount) { path in
-                print(path.map { $0.rawValue })
+                print(path.map { ($0.0.rawValue, "X=\($0.1.xAmount)", "Y=\($0.1.yAmount)") })
             }
         }
     }

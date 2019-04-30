@@ -7,8 +7,8 @@ protocol PathFinder {
     ///   - xAmount: Size of X jug.
     ///   - yAmount: Size of Y jug.
     ///   - zAmount: Size of Z jug.
-    ///   - completion: Completaion handler contains array of steps to solve the riddle.
+    ///   - completion: Completaion handler contains array of steps and states to solve the riddle.
     ///                 Empty array if there is no solution.
-    func findPath(_ xAmount: Int, _ yAmount: Int, _ zAmount: Int, completion: @escaping ([Step]) -> Void)
+    func findPath(_ xAmount: Int, _ yAmount: Int, _ zAmount: Int, completion: @escaping ([(Step, State)]) -> Void)
 
 }

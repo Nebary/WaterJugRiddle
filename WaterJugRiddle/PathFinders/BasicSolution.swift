@@ -5,9 +5,17 @@ class BasicSolution {
     var xJug: Jug
     var yJug: Jug
     var zAmount: Int
-    var path: [Step]
+    var path: [(Step, State)]
     var states: Set<State>
 
+    var currentState: State { return State(xJug, yJug) }
+
+    /// Convenient initializer
+    ///
+    /// - Parameters:
+    ///   - xJug: X jug object.
+    ///   - yJug: Y jug object.
+    ///   - zAmount: Z jug size.
     init(_ xJug: Jug, _ yJug: Jug, _ zAmount: Int) {
         self.xJug = xJug
         self.yJug = yJug
@@ -16,25 +24,30 @@ class BasicSolution {
         states = []
     }
 
+    /// Append the path with next step and current state.
+    ///
+    /// - Parameter step: Next step.
+    private func appendPath(_ step: Step) {
+        path.append((step, currentState))
+    }
+
     /// Process the data and build the steps to solve the riddle
     private func process() {
-        let currentState = State(xJug, yJug)
-
         //Make sure, that we have new state, otherwise return early, as there is no solution.
         guard !states.contains(currentState) else {
-            path.append(.noSoltion)
+            appendPath(.noSoltion)
             return
         }
 
         //Make sure, that X jug doesn't contain Z amount of water, otherwise the solution already found.
         guard xJug.current != zAmount else {
-            path.append(.solutionInX)
+            appendPath(.solutionInX)
             return
         }
 
         //Make sure, that Y jug doesn't contain Z amount of water, otherwise the solution already found.
         guard yJug.current != zAmount else {
-            path.append(.solutionInY)
+            appendPath(.solutionInY)
             return
         }
 
@@ -42,23 +55,26 @@ class BasicSolution {
         //Actual finding algorithm.
         if xJug.current == 0 {
             //If jug is empty, fill it from the lake.
-            path.append(.fillX)
             xJug.fill()
+            appendPath(.fillX)
             process()
         } else {
             if yJug.current == yJug.max {
                 //If jug is full, empty it.
-                path.append(.emptyY)
                 yJug.empty()
+                appendPath(.emptyY)
             }
-            path.append(.transferXToY)
             let howMuchToFill = min((yJug.max - yJug.current), xJug.current)
             xJug.current -= howMuchToFill
             yJug.current += howMuchToFill
+            appendPath(.transferXToY)
             process()
         }
     }
 
+    /// Process the riddle asynchronously.
+    ///
+    /// - Parameter completion: processing completion handler.
     func process(completion: @escaping () -> Void) {
         DispatchQueue.global().async {
             self.process()
