@@ -2,6 +2,8 @@ import Foundation
 
 class BasicSolution {
 
+    static let MaxIterations = 500
+
     var xJug: Jug
     var yJug: Jug
     var zAmount: Int
@@ -33,6 +35,11 @@ class BasicSolution {
 
     /// Process the data and build the steps to solve the riddle
     private func process() {
+        guard states.count < BasicSolution.MaxIterations else {
+            appendPath(.noSoltion)
+            return
+        }
+
         //Make sure, that we have new state, otherwise return early, as there is no solution.
         guard !states.contains(currentState) else {
             appendPath(.noSoltion)
