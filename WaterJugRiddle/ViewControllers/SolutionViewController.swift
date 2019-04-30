@@ -18,28 +18,28 @@ class SolutionViewController: UIViewController {
     @IBOutlet weak var zStepper: UIStepper!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var emptyView: UIView!
-    
-    //PathFinders dependecy.
+
     var pathFinders = [PathFinder]()
     var viewModel: SolutionViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        xStepper.value = UserDefaults.standard.xSize
+        yStepper.value = UserDefaults.standard.ySize
+        zStepper.value = UserDefaults.standard.zSize
+        stepperValueChanged(self)
     }
 
     @IBAction func stepperValueChanged(_ sender: Any) {
-        guard let stepper = sender as? UIStepper else { return }
-        let text = String(Int(stepper.value))
-        if stepper == xStepper {
-            xLabel.text = text
-        } else if stepper == yStepper {
-            yLabel.text = text
-        } else {
-            zLabel.text = text
-        }
+        xLabel.text = String(Int(xStepper.value))
+        yLabel.text = String(Int(yStepper.value))
+        zLabel.text = String(Int(zStepper.value))
     }
 
     @IBAction func findSolutionTapped(_ sender: Any) {
+        UserDefaults.standard.xSize = xStepper.value
+        UserDefaults.standard.ySize = yStepper.value
+        UserDefaults.standard.zSize = zStepper.value
         viewModel = SolutionViewModel(xSize: xStepper.value,
                                       ySize: yStepper.value,
                                       zSize: zStepper.value,

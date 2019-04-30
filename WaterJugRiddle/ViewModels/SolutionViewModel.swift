@@ -30,7 +30,9 @@ class SolutionViewModel {
                 .min { $0.count < $1.count }?
                 .map { StepCellModel(text: $0.0.rawValue,
                                      xAmount: $0.1.xAmount,
-                                     yAmount: $0.1.yAmount)
+                                     yAmount: $0.1.yAmount,
+                                     xSize: Int(xSize),
+                                     ySize: Int(ySize))
                 } ?? []
             completion()
         }
@@ -42,4 +44,6 @@ struct StepCellModel {
     let text: String
     let xAmount: Int
     let yAmount: Int
+    let xSize: Int
+    let ySize: Int
 }
