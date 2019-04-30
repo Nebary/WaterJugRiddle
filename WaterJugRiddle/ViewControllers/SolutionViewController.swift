@@ -40,10 +40,12 @@ class SolutionViewController: UIViewController {
         UserDefaults.standard.xSize = xStepper.value
         UserDefaults.standard.ySize = yStepper.value
         UserDefaults.standard.zSize = zStepper.value
+        HUD.showProgress()
         viewModel = SolutionViewModel(xSize: xStepper.value,
                                       ySize: yStepper.value,
                                       zSize: zStepper.value,
                                       pathFinders: pathFinders) { [weak self] in
+            HUD.hide()
             guard let self = self else { return }
             self.reloadData()
         }

@@ -15,6 +15,8 @@
 		A37D17C022781A2D0018ED4D /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17BF22781A2D0018ED4D /* UITableView.swift */; };
 		A37D17C222781A450018ED4D /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C122781A450018ED4D /* UIView+Layer.swift */; };
 		A37D17C422781A6F0018ED4D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C322781A6F0018ED4D /* UserDefaults.swift */; };
+		A37D17C6227823660018ED4D /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C5227823660018ED4D /* HUD.swift */; };
+		A37D17C8227823980018ED4D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17C7227823980018ED4D /* UIView+Constraints.swift */; };
 		A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4D22779249007E850E /* AppDelegate.swift */; };
 		A3B8CC5022779249007E850E /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4F22779249007E850E /* SolutionViewController.swift */; };
 		A3B8CC5322779249007E850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC5122779249007E850E /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		A37D17BF22781A2D0018ED4D /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		A37D17C122781A450018ED4D /* UIView+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
 		A37D17C322781A6F0018ED4D /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A37D17C5227823660018ED4D /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		A37D17C7227823980018ED4D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		A3B8CC4A22779249007E850E /* WaterJugRiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJugRiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC4D22779249007E850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B8CC4F22779249007E850E /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
@@ -122,19 +126,20 @@
 		A37D17B82277E8720018ED4D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A37D17BB2278108E0018ED4D /* Cells */,
+				A37D17BB2278108E0018ED4D /* Views */,
 				A3B8CC5122779249007E850E /* Main.storyboard */,
 				A3B8CC562277924A007E850E /* LaunchScreen.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		A37D17BB2278108E0018ED4D /* Cells */ = {
+		A37D17BB2278108E0018ED4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A37D17B9227810860018ED4D /* StepCell.swift */,
+				A37D17C5227823660018ED4D /* HUD.swift */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A37D17BC227819DF0018ED4D /* Extensions */ = {
@@ -143,6 +148,7 @@
 				A37D17BD227819EA0018ED4D /* CGColor.swift */,
 				A37D17BF22781A2D0018ED4D /* UITableView.swift */,
 				A37D17C122781A450018ED4D /* UIView+Layer.swift */,
+				A37D17C7227823980018ED4D /* UIView+Constraints.swift */,
 				A37D17C322781A6F0018ED4D /* UserDefaults.swift */,
 			);
 			path = Extensions;
@@ -409,6 +415,8 @@
 				A3B8CC7A22779D28007E850E /* PathFinder.swift in Sources */,
 				A3B8CC7F2277A452007E850E /* RightPathFinder.swift in Sources */,
 				A3B8CC7722779AD6007E850E /* Step.swift in Sources */,
+				A37D17C6227823660018ED4D /* HUD.swift in Sources */,
+				A37D17C8227823980018ED4D /* UIView+Constraints.swift in Sources */,
 				A37D17B62277E7F20018ED4D /* SolutionViewModel.swift in Sources */,
 				A37D17C222781A450018ED4D /* UIView+Layer.swift in Sources */,
 				A37D17BA227810860018ED4D /* StepCell.swift in Sources */,
