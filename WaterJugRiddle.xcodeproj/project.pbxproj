@@ -10,6 +10,7 @@
 		4463F8BF720F6AE327252903 /* Pods_WaterJugRiddleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50C1AE06C11A22374EFC63E /* Pods_WaterJugRiddleTests.framework */; };
 		A08E5EC4F68F1BA89C0F8815 /* Pods_WaterJugRiddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387DE06B74AACC229F2A4F85 /* Pods_WaterJugRiddle.framework */; };
 		A37D17B62277E7F20018ED4D /* SolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17B52277E7F20018ED4D /* SolutionViewModel.swift */; };
+		A37D17BA227810860018ED4D /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D17B9227810860018ED4D /* StepCell.swift */; };
 		A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4D22779249007E850E /* AppDelegate.swift */; };
 		A3B8CC5022779249007E850E /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8CC4F22779249007E850E /* SolutionViewController.swift */; };
 		A3B8CC5322779249007E850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B8CC5122779249007E850E /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		737068FD9E61D44BD5E913CD /* Pods-WaterJugRiddleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddleTests.debug.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddleTests/Pods-WaterJugRiddleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CFB1FCF6DE9CE3B29F1F9AC /* Pods-WaterJugRiddleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterJugRiddleTests.release.xcconfig"; path = "Target Support Files/Pods-WaterJugRiddleTests/Pods-WaterJugRiddleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A37D17B52277E7F20018ED4D /* SolutionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewModel.swift; sourceTree = "<group>"; };
+		A37D17B9227810860018ED4D /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		A3B8CC4A22779249007E850E /* WaterJugRiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJugRiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8CC4D22779249007E850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B8CC4F22779249007E850E /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
@@ -112,10 +114,19 @@
 		A37D17B82277E8720018ED4D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A37D17BB2278108E0018ED4D /* Cells */,
 				A3B8CC562277924A007E850E /* LaunchScreen.storyboard */,
 				A3B8CC5122779249007E850E /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		A37D17BB2278108E0018ED4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A37D17B9227810860018ED4D /* StepCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A3B8CC4122779249007E850E = {
@@ -379,6 +390,7 @@
 				A3B8CC7F2277A452007E850E /* RightPathFinder.swift in Sources */,
 				A3B8CC7722779AD6007E850E /* Step.swift in Sources */,
 				A37D17B62277E7F20018ED4D /* SolutionViewModel.swift in Sources */,
+				A37D17BA227810860018ED4D /* StepCell.swift in Sources */,
 				A3B8CC4E22779249007E850E /* AppDelegate.swift in Sources */,
 				A3B8CC7D22779EE4007E850E /* BasicSolution.swift in Sources */,
 				A3B8CC812277A8D3007E850E /* LeftPathFinder.swift in Sources */,

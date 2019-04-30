@@ -16,7 +16,9 @@ class SolutionViewController: UIViewController {
     @IBOutlet weak var xStepper: UIStepper!
     @IBOutlet weak var yStepper: UIStepper!
     @IBOutlet weak var zStepper: UIStepper!
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var emptyView: UIView!
+    
     //PathFinders dependecy.
     var pathFinders = [PathFinder]()
     var viewModel: SolutionViewModel?
@@ -49,7 +51,28 @@ class SolutionViewController: UIViewController {
 
     func reloadData() {
         guard let model = viewModel else { return }
-        print(model.cells)
+        tableView.backgroundView = model.cells.isEmpty ? emptyView : nil
+        tableView.reloadData()
+    }
+
+}
+
+extension SolutionViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel?.cells.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: StepCell.reuseId) as? StepCell,
+            let model = viewModel,
+            indexPath.row < model.cells.count
+            else {
+                return UITableViewCell(style: .default, reuseIdentifier: nil)
+            }
+        cell.apply(model.cells[indexPath.row])
+        return cell
     }
 
 }
