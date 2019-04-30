@@ -21,10 +21,8 @@ enum Step: String, Hashable {
     case emptyX = "Empty X"
     case emptyY = "Empty Y"
 
-    /// Reverts the meaning of some states.
-    ///
-    /// - Returns: reverted (if applicable) meaning of the current step.
-    func reverse() -> Step {
+    /// Reverted (if applicable) meaning of the current step.
+    var reversed: Step {
         switch self {
         case .solutionInX:
             return .solutionInY

@@ -53,20 +53,18 @@ class BasicSolution {
 
         states.insert(currentState)
         //Actual finding algorithm.
-        if xJug.current == 0 {
-            //If jug is empty, fill it from the lake.
+        if xJug.isEmpty {
             xJug.fill()
             appendPath(.fillX)
             process()
         } else {
-            if yJug.current == yJug.max {
-                //If jug is full, empty it.
+            if yJug.isFull {
                 yJug.empty()
                 appendPath(.emptyY)
             }
-            let howMuchToFill = min((yJug.max - yJug.current), xJug.current)
-            xJug.current -= howMuchToFill
-            yJug.current += howMuchToFill
+            let transferAmount = min(yJug.amountLeft, xJug.current)
+            xJug.current -= transferAmount
+            yJug.current += transferAmount
             appendPath(.transferXToY)
             process()
         }

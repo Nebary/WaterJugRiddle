@@ -12,7 +12,7 @@ struct LeftPathFinder: PathFinder {
             if solution.path.last?.0 == .noSoltion {
                 completion([])
             } else {
-                completion(solution.path.map { ($0.0.reverse(), $0.1.reverse()) })
+                completion(solution.path.map { ($0.0.reversed, $0.1.reversed) })
             }
         }
     }

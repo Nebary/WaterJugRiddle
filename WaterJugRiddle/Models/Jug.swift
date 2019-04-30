@@ -4,6 +4,10 @@ struct Jug {
     let max: Int
     var current: Int
 
+    var isEmpty: Bool { return current == 0 }
+    var isFull: Bool { return current == max }
+    var amountLeft: Int { return max - current }
+
     /// Convenient initializer for the jug object.
     ///
     /// - Parameter size: Int value representing the size of the jug.

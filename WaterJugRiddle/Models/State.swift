@@ -5,6 +5,9 @@ struct State: Hashable {
     let xAmount: Int
     let yAmount: Int
 
+    /// Reverted state.
+    var reversed: State { return State(yAmount, xAmount) }
+
     /// Default initializer
     ///
     /// - Parameters:
@@ -23,13 +26,6 @@ struct State: Hashable {
     init(_ xJug: Jug, _ yJug: Jug) {
         xAmount = xJug.current
         yAmount = yJug.current
-    }
-
-    /// Revert the state.
-    ///
-    /// - Returns: Reverted state.
-    func reverse() -> State {
-        return State(yAmount, xAmount)
     }
 
 }

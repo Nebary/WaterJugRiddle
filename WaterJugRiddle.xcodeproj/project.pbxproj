@@ -114,10 +114,10 @@
 		A3B8CC4C22779249007E850E /* WaterJugRiddle */ = {
 			isa = PBXGroup;
 			children = (
+				A3B8CC4D22779249007E850E /* AppDelegate.swift */,
 				A3B8CC7822779D08007E850E /* Protocols */,
 				A3B8CC712277963B007E850E /* Models */,
 				A3B8CC7B22779EA7007E850E /* PathFinders */,
-				A3B8CC4D22779249007E850E /* AppDelegate.swift */,
 				A3B8CC4F22779249007E850E /* ViewController.swift */,
 				A3B8CC5122779249007E850E /* Main.storyboard */,
 				A3B8CC542277924A007E850E /* Assets.xcassets */,
